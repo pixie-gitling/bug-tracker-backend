@@ -1,7 +1,9 @@
 [build]
-functions = "functions"
+  functions = "functions"
+  publish = "bug-tracker-frontend/build"
+  command = "npm install && npm run build-client"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/api"
+  to = "/index.html"
   status = 200
